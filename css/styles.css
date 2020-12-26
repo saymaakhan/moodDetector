@@ -7,9 +7,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to top, rgb(19, 140, 138) 0%, rgb(126, 232, 105) 100%);
 }
 
 canvas {
+  padding: 20px;
   position: absolute;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(28, 28, 28, 0.618);
 }
 
