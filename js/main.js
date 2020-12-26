@@ -15,5 +15,13 @@ function startVideo() { //stream webcam video into video element
   );
 }
 
+video.addEventListener("playing", () => {
+  const canvas = faceapi.createCanvasFromMedia(video); 
+  document.body.append(canvas);
+
+  const displaySize = { width: video.width, height: video.height };
+  faceapi.matchDimensions(canvas, displaySize); //size canvas to video 
+
+});
 
 
